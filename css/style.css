@@ -7,7 +7,69 @@ body {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
+}
+
+/* === Grid === */
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+[class*="col-"] {
+  float: left;
+  text-align: center;
+  margin: 0 auto;
 }
 
 /* === HEADER === */
@@ -66,17 +128,17 @@ nav a {
   text-align: center;
   margin: auto;
   width: 900px;
-  padding-top: 212px;
+  top: 210px;
 }
 
-.home h2 {
+.home > h2 {
   color: #ffffff;
-  font-family: 'Nanum Myeongjo', serif;
+  font-family: 'Nanum Myeongjo';
   font-style: italic;
   font-size: 40px;
 }
 
-.home h1 {
+.home > h1 {
   color: #ffffff;
   font-family: Montserrat;
   font-size: 75px;
@@ -84,15 +146,12 @@ nav a {
   text-transform: uppercase;
 }
 
-.home button {
+.home > button {
   width: 240px;
   height: 65px;
   background-color: #fed136;
   padding: 0;
-}
-
-.home button p {
-  width: 240px;
+  border: none;
   color: #ffffff;
   margin: 0;
   font-family: Montserrat;
@@ -100,4 +159,6 @@ nav a {
   font-weight: 700;
   text-transform: uppercase;
 }
+
+/* === SERVICES === */
 /*# sourceMappingURL=style.css.map */
