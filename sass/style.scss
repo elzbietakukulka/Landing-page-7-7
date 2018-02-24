@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat|Nanum+Myeongjo');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 
 body {
   margin: 0;
@@ -13,6 +14,29 @@ body {
 
 $yellow-colour: #fed136;
 $white-colour: #ffffff;
+$black-colour: #222222;
+$grey-colour: #777777;
+
+@mixin title {
+	color: $black-colour;
+	font-family: Montserrat;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 75px;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	margin: 0;
+}
+
+@mixin subtitle {
+	height: 17px;
+	color: $grey-colour;
+	font-family: 'Nanum Myeongjo';
+	font-size: 16px;
+	font-style: italic;
+	margin: 0;
+	padding-bottom: 80px;
+}
 
 /* === Grid === */
 
@@ -49,12 +73,13 @@ $white-colour: #ffffff;
   background-position: center;
   width: 100%;
   height: 700px;
-  position: absolute;
+  
 }
 
 nav {
-  margin: 44px 237px;
-  position: relative;
+  width: 950px;
+  margin: auto;
+  padding-top: 44px;
 }
 
 nav {
@@ -94,6 +119,7 @@ nav {
     text: justify;
   }
 }
+
 nav:before,
 nav:after {
   content: "";
@@ -145,3 +171,78 @@ nav:after {
 
 
 /* === SERVICES === */
+.container {
+	max-width: 934px;
+	width: 100%;
+	margin: auto;
+	padding: 120px 0;
+}
+
+.heading {
+	h4 {
+		@include title;
+	}
+
+	p {
+		@include subtitle;
+	}
+}
+
+
+
+i.fas {
+	color: $yellow-colour;
+	font-size: 35px;
+	text-align: center;
+	width: 68px;
+	height: 68px;
+	line-height: 60px;
+	border: 3px solid $yellow-colour;
+	border-radius: 50%;
+}
+
+.icons {
+	h4 {
+		color: $black-colour;
+		font-family: Montserrat;
+		font-size: 18px;
+		font-weight: 700;
+		letter-spacing: -0.45px;
+	}
+	p {
+		color: $grey-colour;
+		font-family: "Roboto Slab";
+		font-size: 14px;
+		font-weight: 400;
+		letter-spacing: -0.35px;
+	}
+}
+
+/* === PORTFOLIO === */
+.main-container {
+	background-color: #f7f7f7;
+}
+
+[class*="company"] {
+  width: 32%;
+}
+
+.company1 {
+  margin-right: 2%;
+}
+
+[class*="company"] {
+  width: 32%;
+  background-color: white;
+}
+.first-row {
+	margin-bottom: 2%;
+}
+
+.image {
+	background-size: cover;
+	width: 100%;
+	object-fit: cover;
+}
+	
+	
