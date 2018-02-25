@@ -276,7 +276,7 @@ i.fas {
 
 .relative {
   position: relative;
-  z-index: 0;
+  z-index: 1;
 }
 
 .relative::before {
@@ -286,7 +286,7 @@ i.fas {
   background-color: #f1f1f1;
   margin: auto;
   hight: 100%;
-  z-index: -1;
+  z-index: 0;
 }
 
 .photo {
@@ -379,5 +379,97 @@ i.fas {
   font-size: 16px;
   font-weight: 400;
   letter-spacing: -0.4px;
+}
+
+/* === LOGOS === */
+.logos {
+  padding: 80px 0;
+}
+
+.logo {
+  height: 42px;
+  line-height: 42px;
+}
+
+/*== CONTACT ==*/
+.main-container {
+  background-image: url("../images/map-image.png");
+  width: 100%;
+  background-color: #222222;
+  background-position: right;
+}
+
+.heading h4 {
+  color: #222222;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 75px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.heading p {
+  height: 17px;
+  color: #777777;
+  font-family: 'Nanum Myeongjo';
+  font-size: 16px;
+  font-style: italic;
+  margin: 0;
+  padding-bottom: 80px;
+  color: #ffffff;
+}
+
+.form {
+  width: 455px;
+  height: 50px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  margin-bottom: 15px;
+  margin-right: 5px;
+  border-radius: 3px;
+}
+
+.form-message {
+  width: 455px;
+  height: 180px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  margin-left: 5px;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  color: #bbbbbb;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-left: 20px;
+  resize: vertical;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+input[type=submit] {
+  width: 240px;
+  height: 65px;
+  background-color: #fed136;
+  border: none;
+  border-radius: 3px;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.submit-button {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

@@ -278,7 +278,7 @@ i.fas {
 
 .relative {
 	position: relative;
-	z-index: 0;
+	z-index: 1;
 }
 
 .relative::before {
@@ -288,7 +288,7 @@ i.fas {
 	background-color: #f1f1f1;
 	margin: auto;
 	hight: 100%;
-	z-index: -1;
+	z-index: 0;
 }
 
 .photo {
@@ -363,7 +363,7 @@ i.fas {
 	.fab {
 		width: 41px;
 		height: 41px;
-		border: 3px solid #222222;
+		border: 3px solid $black-colour;
 		border-radius: 50%;
 		top: 50%;
 		line-height: 40px;
@@ -381,3 +381,84 @@ i.fas {
 	}
 }
 
+/* === LOGOS === */
+.logos {
+	padding: 80px 0;
+}
+.logo {
+	height: 42px;
+	line-height: 42px;
+}
+
+/*== CONTACT ==*/
+
+.main-container {
+	background-image: url("../images/map-image.png");
+  	width: 100%;
+  	background-color: $black-colour;
+  	background-position: right;
+}
+
+.heading {
+	h4 {
+		@include title;
+		color: $white-colour;
+	}
+
+	p {
+		@include subtitle;
+		color: $white-colour;
+	}
+}
+
+.form {
+	width: 455px;
+	height: 50px;
+	border: 1px solid #cccccc;
+	background-color: $white-colour;
+	margin-bottom: 15px;
+	margin-right: 5px;
+	border-radius: 3px;
+}
+
+.form-message {
+	width: 455px;
+	height: 180px;
+	border: 1px solid #cccccc;
+	background-color: $white-colour;
+	margin-left: 5px;
+	border-radius: 3px;
+}
+
+input[type=text] {
+	color: #bbbbbb;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding-left: 20px;
+	resize: vertical;
+
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+input[type=submit] {
+	width: 240px;
+  	height: 65px;
+  	background-color: $yellow-colour;
+  	border: none;
+  	border-radius: 3px;
+  	color: $white-colour;
+  	font-family: Montserrat;
+  	font-size: 18px;
+  	font-weight: 700;
+  	text-transform: uppercase;
+  	cursor: pointer;
+}
+
+.submit-button {
+	text-align: center;
+}
