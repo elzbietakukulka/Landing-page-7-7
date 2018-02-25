@@ -274,19 +274,21 @@ i.fas {
   margin-bottom: 97px;
 }
 
+.absolute {
+  postion: absolute;
+  z-index: 0;
+}
+
 .relative {
   position: relative;
   z-index: 1;
 }
 
-.relative::before {
-  content: "";
-  position: absolute;
+.element {
   width: 3px;
   background-color: #f1f1f1;
   margin: auto;
   hight: 100%;
-  z-index: 0;
 }
 
 .photo {
