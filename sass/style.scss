@@ -9,7 +9,7 @@ body {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
 $yellow-colour: #fed136;
@@ -318,7 +318,7 @@ i.fas {
 		font-weight: 700;
 		text-transform: uppercase;
 		margin-bottom: 0;
-		margin-top: 10px;
+		margin-top: 15px;
 	}
 }
 
@@ -366,8 +366,14 @@ i.fas {
 		border: 3px solid $black-colour;
 		border-radius: 50%;
 		top: 50%;
-		line-height: 40px;
+		line-height: 41px;
 		text-align: center;
+		cursor: pointer;
+	}
+
+	.fab:hover {
+		background-color: $black-colour;
+		color: $white-colour;
 	}
 }
 
@@ -392,14 +398,14 @@ i.fas {
 
 /*== CONTACT ==*/
 
-.main-container {
+.map-container {
 	background-image: url("../images/map-image.png");
   	width: 100%;
   	background-color: $black-colour;
   	background-position: right;
 }
 
-.heading {
+.heading-white {
 	h4 {
 		@include title;
 		color: $white-colour;
@@ -461,4 +467,40 @@ input[type=submit] {
 
 .submit-button {
 	text-align: center;
+}
+
+/*== FOOTER ==*/
+footer {
+	.container {
+		padding: 0;
+	}
+	[class*="col-"] {
+		height: 65px;
+		line-height: 65px;
+		margin: 0;	
+	}
+	p {
+		margin: 0;
+		color: #555555;
+		font-family: Montserrat;
+		font-size: 14px;
+		font-weight: 400;
+		letter-spacing: -0.35px;
+	}
+	.fab {
+		width: 41px;
+		height: 41px;
+		border-radius: 50%;
+		top: 50%;
+		line-height: 41px;
+		text-align: center;
+		background-color: $black-colour;
+		color: $white-colour;
+		cursor: pointer;
+	}
+
+	.fab:hover {
+		background-color: $white-colour;
+		color: $black-colour;
+	}
 }

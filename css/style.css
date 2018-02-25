@@ -8,7 +8,7 @@ body {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
 /* === Grid === */
@@ -316,7 +316,7 @@ i.fas {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 0;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .main-row h4 {
@@ -369,8 +369,14 @@ i.fas {
   border: 3px solid #222222;
   border-radius: 50%;
   top: 50%;
-  line-height: 40px;
+  line-height: 41px;
   text-align: center;
+  cursor: pointer;
+}
+
+.team .fab:hover {
+  background-color: #222222;
+  color: #ffffff;
 }
 
 .team-row p {
@@ -392,14 +398,14 @@ i.fas {
 }
 
 /*== CONTACT ==*/
-.main-container {
+.map-container {
   background-image: url("../images/map-image.png");
   width: 100%;
   background-color: #222222;
   background-position: right;
 }
 
-.heading h4 {
+.heading-white h4 {
   color: #222222;
   font-family: Montserrat;
   font-size: 40px;
@@ -411,7 +417,7 @@ i.fas {
   color: #ffffff;
 }
 
-.heading p {
+.heading-white p {
   height: 17px;
   color: #777777;
   font-family: 'Nanum Myeongjo';
@@ -471,5 +477,42 @@ input[type=submit] {
 
 .submit-button {
   text-align: center;
+}
+
+/*== FOOTER ==*/
+footer .container {
+  padding: 0;
+}
+
+footer [class*="col-"] {
+  height: 65px;
+  line-height: 65px;
+  margin: 0;
+}
+
+footer p {
+  margin: 0;
+  color: #555555;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.35px;
+}
+
+footer .fab {
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  top: 50%;
+  line-height: 41px;
+  text-align: center;
+  background-color: #222222;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+footer .fab:hover {
+  background-color: #ffffff;
+  color: #222222;
 }
 /*# sourceMappingURL=style.css.map */
