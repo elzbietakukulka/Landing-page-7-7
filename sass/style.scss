@@ -124,7 +124,7 @@ nav {
 
   a {
     line-height: 41px;
-    padding: 0;
+    padding: 0 20px;
     display: block;
     text-decoration: none;
     text-transform: uppercase;
@@ -369,6 +369,7 @@ i.fas {
 		line-height: 41px;
 		text-align: center;
 		cursor: pointer;
+		margin: 5px;
 	}
 
 	.fab:hover {
@@ -418,22 +419,22 @@ i.fas {
 }
 
 .form {
-	width: 455px;
+	width: 98%;
 	height: 50px;
 	border: 1px solid #cccccc;
 	background-color: $white-colour;
 	margin-bottom: 15px;
-	margin-right: 5px;
+	margin: 2%;
 	border-radius: 3px;
 }
 
 .form-message {
-	width: 455px;
-	height: 180px;
+	width: 98%;
+	height: 187px;
 	border: 1px solid #cccccc;
 	background-color: $white-colour;
-	margin-left: 5px;
 	border-radius: 3px;
+	margin: 2%;
 }
 
 input[type=text] {
@@ -443,7 +444,6 @@ input[type=text] {
 	font-weight: 700;
 	text-transform: uppercase;
 	padding-left: 20px;
-	resize: vertical;
 
 }
 
@@ -474,10 +474,12 @@ footer {
 	.container {
 		padding: 0;
 	}
+
 	[class*="col-"] {
 		height: 65px;
 		line-height: 65px;
-		margin: 0;	
+		margin: 0;
+		padding: 10px;	
 	}
 	p {
 		margin: 0;
@@ -497,10 +499,216 @@ footer {
 		background-color: $black-colour;
 		color: $white-colour;
 		cursor: pointer;
+		margin-left: 5px;
 	}
 
 	.fab:hover {
 		background-color: $white-colour;
 		color: $black-colour;
+		border: 3px solid $black-colour;
 	}
+}
+
+
+/* === MEDIA === */
+
+@media (max-width: 767px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    
+   [class*="col-"] {
+    padding: 12px;
+   float:left;
+} 
+
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.container {
+	width: 100%;
+}
+
+/*== HEADER ==*/
+nav {
+	width: 100%;
+	text-align: center;
+	padding-top: 0;
+}
+
+nav {
+  h3 {
+    float: none;
+    margin: auto;
+    width: 100%;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    float: none;
+  }
+
+  li {
+    display: block;
+    
+  }
+  a {
+    display: block;
+    width: 100%;
+  }
+}
+
+.home {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+ 
+}
+
+.home > h2 {
+  font-size: 26px;
+  margin: 0;
+ }
+
+.home > h1 {
+  font-size: 38px;
+  
+}
+
+.home > button {
+  width: 150px;
+  height: 45px;
+  font-size: 15px;
+}
+
+/*== ABOUT US ==*/
+.main-row {
+	margin-bottom: 30px;
+}
+.main-row .left {
+	text-align: center;
+}
+
+.main-row .right {
+	text-align: center;
+}
+
+.main-row .empty {
+	display: none;
+}
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    /* For desktop: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+    
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.container {
+	width: 100%;
+}
+/*== HEADER ==*/
+nav {
+	width: 100%;
+}
+nav {
+	h3 {
+		padding-left: 30px;
+	}
+	a {
+		padding: 0 10px;
+	}
+}
+
+.home {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+ 
+}
+.home > h2 {
+  font-size: 36px;
+  margin: 0;
+ }
+
+.home > h1 {
+  font-size: 55px; 
+}
+/* === PORTFOLIO === */
+.company1 {
+  margin-right: 2%;
+}
+
+[class*="company"] {
+  width: 32%;
+  background-color: white;
+}
+
+/*== ABOUT US ==*/
+.main-row {
+	margin-bottom: 15px;
+}
+
+.main-row .empty {
+	display: none;
+}
+
+/*== CONTACT ==*/
+.form {
+	width: 98%;
+	margin: 2%;
+}
+
+.form-message {
+	width: 96%;
+	height: 182px;
+	margin: 2%;
+}
+
+/*== FOOTER ==*/
+footer {
+	.empty {
+		display: none;
+	}
+}
+
+footer {
+	[class*="col-"] {
+		height: 65px;
+		line-height: 65px;
+		padding: 0;	
+	}
+}
 }
