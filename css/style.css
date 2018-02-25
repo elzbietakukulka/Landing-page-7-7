@@ -275,13 +275,13 @@ i.fas {
 }
 
 .absolute {
-  postion: absolute;
-  z-index: -1;
+  position: absolute;
+  z-index: 0;
 }
 
 .relative {
   position: relative;
-  z-index: 0;
+  z-index: 1;
 }
 
 .element {
